@@ -41,6 +41,15 @@ a:hover{opacity:.86}
 .measure{
   max-width: var(--measure);
 }
+.content{
+  min-width: 0;
+}
+
+.hero__cta{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
 .rail{
   /* left grid column — reserved for labels or offsets */
 }
