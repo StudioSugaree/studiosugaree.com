@@ -7,7 +7,10 @@
   --card: #ffffff;
   --shadow: 0 12px 28px rgba(0,0,0,.06);
   --radius: 18px;
-  --wrap: 1120px;
+  --wrap: 960px;
+  --rail: 120px;     /* left label rail */
+  --gap: 28px;       /* grid gap */
+  --measure: 66ch;   /* ideal text width */
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -23,7 +26,24 @@ a:hover{opacity:.86}
 .skip{position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden;}
 .skip:focus{left:18px; top:12px; width:auto; height:auto; padding:10px 12px; background:#fff; border:1px solid var(--hair); border-radius:12px; z-index:999}
 
-.wrap{max-width:var(--wrap); margin:0 auto; padding:0 22px}
+.wrap{max-width:var(--wrap); margin:0 auto; padding:0 24px}
+.frame{
+  display: grid;
+  grid-template-columns: var(--rail) 1fr;
+  gap: var(--gap);
+  align-items: start;
+}
+@media (max-width: 900px){
+  .frame{
+    grid-template-columns: 1fr;
+  }
+}
+.measure{
+  max-width: var(--measure);
+}
+.rail{
+  /* left grid column — reserved for labels or offsets */
+}
 .top{
   position:sticky; top:0; z-index:50;
   background: rgba(251,251,251,.86);
