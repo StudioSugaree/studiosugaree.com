@@ -43,12 +43,6 @@ a:hover{opacity:.86}
 .measure{
   max-width: var(--measure);
 }
-.panel{
-  background: none;
-  border: none;
-  box-shadow: none;
-  padding: 0;
-}
 .content{
   min-width: 0;
 }
@@ -58,17 +52,16 @@ a:hover{opacity:.86}
   gap: 2rem;
   align-items: center;
 }
-.rail {
-  width: 1px;
-  background: rgba(0,0,0,.12);
-}  /* left grid column — reserved for labels or offsets */
+.rail{
+  border-right: 1px solid rgba(0,0,0,.12);
+}
+labels or offsets */
 .top{
   position:sticky; top:0; z-index:50;
   background: rgba(251,251,251,.86);
   backdrop-filter: blur(10px);
   border-bottom:1px solid var(--hair);
 }
-.top__inner{display:flex; align-items:center; justify-content:space-between; padding:14px 0}
 .brand{display:flex; align-items:center; gap:10px; text-decoration:none}
 .brand__mark{
   display:inline-flex; align-items:center; justify-content:center;
@@ -95,7 +88,6 @@ a:hover{opacity:.86}
   opacity: .75;
   margin-top: 1.25rem;
 }
-.hero__sub2{display:block; margin-top:10px; color: var(--ink)}
 .hero__meta{margin-top:26px; display:grid; gap:18px}
 .meta{margin:0; max-width: 84ch}
 .hero__cta{display:flex; gap:14px; align-items:center}
@@ -122,14 +114,6 @@ h3{margin:0 0 8px; font-size:16px; letter-spacing:-.01em}
   .section__head{flex-direction:column; align-items:flex-start}
   .nav{gap:12px}
 }
-
-.card{
-  background: var(--card);
-  border:1px solid var(--hair);
-  border-radius: var(--radius);
-  padding:18px;
-  box-shadow: var(--shadow);
-}
 .panel{
   background: none;
   border: none;
@@ -154,7 +138,6 @@ h3{margin:0 0 8px; font-size:16px; letter-spacing:-.01em}
 .link:hover {
   opacity: .6;
 }
-.mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}
 .muted{color: var(--muted)}
 .small{font-size:14px}
 .tiny{font-size:12px}
@@ -165,10 +148,9 @@ h3{margin:0 0 8px; font-size:16px; letter-spacing:-.01em}
 .workgrid{display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:18px}
 @media (max-width: 900px){ .workgrid{grid-template-columns:1fr} }
 .work{
-  border:1px solid var(--hair);
-  border-radius: var(--radius);
-  padding:16px;
-  background: rgba(255,255,255,.7);
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid var(--hair);
+  background: none;
 }
 .tag{margin:0 0 10px; font-size:12px; letter-spacing:.08em; text-transform:uppercase; color: var(--muted)}
 .work p{margin:0; font-size:14px; color: var(--muted)}
@@ -203,13 +185,11 @@ input:focus, textarea:focus{
   border-color: rgba(11,11,11,.35);
   box-shadow: 0 0 0 3px rgba(11,11,11,.08);
 }
-
-.notes{display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:16px}
-@media (max-width: 900px){ .notes{grid-template-columns:1fr} }
-.note{border:1px solid var(--hair); border-radius: var(--radius); padding:16px; background:#fff}
-.note a{text-decoration:none; border-bottom:1px solid var(--hair)}
-.note a[aria-disabled="true"]{pointer-events:none; opacity:.72}
-
+.note{
+  padding: 0 0 18px 0;
+  border-bottom: 1px solid var(--hair);
+  background: none;
+}
 .footer {
   padding: 4rem 0;
   border-top: 1px solid rgba(0,0,0,.08);
