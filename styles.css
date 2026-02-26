@@ -46,16 +46,10 @@ a:hover{opacity:.86}
 .content{
   min-width: 0;
 }
-
-.hero__cta{
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-}
 .rail{
   border-right: 1px solid rgba(0,0,0,.12);
 }
-labels or offsets */
+/* left grid column — reserved for labels or offsets */
 .top{
   position:sticky; top:0; z-index:50;
   background: rgba(251,251,251,.86);
@@ -109,10 +103,23 @@ h2{font-size:18px; letter-spacing:-.01em; font-weight:500}
 h3{margin:0 0 8px; font-size:16px; letter-spacing:-.01em}
 
 .grid2{display:grid; grid-template-columns: 1.25fr .75fr; gap:48px; align-items:start}
+
+/* about section asymmetry + “second voice” */
+#about .grid2{
+  grid-template-columns: 1.4fr .6fr;
+}
+#about .panel{
+  font-size: 0.92rem;
+  line-height: 1.45;
+  opacity: 0.85;
+}
+#about .panel p{
+  margin: 0 0 10px 0;
+}
+
 @media (max-width: 900px){
   .grid2{grid-template-columns:1fr}
-  .section__head{flex-direction:column; align-items:flex-start}
-  .nav{gap:12px}
+  ...
 }
 .panel{
   background: none;
