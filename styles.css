@@ -178,8 +178,26 @@ about .grid2{
   background:#fff;
 }
 
-.bullets{margin:0; padding-left:18px; color: var(--muted)}
-.bullets li{margin:6px 0}
+.plus-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.plus-list li{
+  position: relative;
+  padding-left: 18px;
+  margin: 8px 0;
+  color: var(--muted);
+}
+
+.plus-list li::before{
+  content: "+";
+  position: absolute;
+  left: 0;
+  color: var(--ink);
+  font-weight: 500;
+}
 
 .form label{display:grid; gap:6px; margin-bottom:12px}
 input, textarea{
