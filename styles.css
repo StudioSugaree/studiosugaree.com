@@ -220,7 +220,7 @@ h3{margin:0 0 8px; font-size:16px; letter-spacing:-.01em}
   content: "＋";
   position: absolute;
   left: 0;
-  top: 0.4em;          /* vertically align it better */
+  top: 0.5em;          /* vertically align it better */
   font-size: 0.55em;    /* makes it ~half size */
   color: var(--ink);
   font-weight: 300;
