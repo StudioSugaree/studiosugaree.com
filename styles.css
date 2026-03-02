@@ -105,7 +105,7 @@ h3{margin:0 0 8px; font-size:16px; letter-spacing:-.01em}
 .grid2{display:grid; grid-template-columns: 1.25fr .75fr; gap:48px; align-items:start}
 
 /* about section asymmetry + “second voice” */
-about .grid2{
+#about .grid2{
   grid-template-columns: 1.5fr .5fr;
 }
 
@@ -176,7 +176,20 @@ about .grid2{
 .work p:last-child{color:var(--ink)}
 
 .aside{margin-top:18px}
-.aside__inner{border:1px dashed var(--hair); border-radius: var(--radius); padding:14px}
+
+/* foundational block (replaces pills + dashed box) */
+.aside__inner{
+  padding: 18px 0 0;
+  border: none;
+}
+
+.foundational{
+  margin: 10px 0 0;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--muted);
+  max-width: 72ch;
+}
 
 /* “designed” stagger */
 .workgrid .work:nth-child(odd){ transform: translateY(10px); }
