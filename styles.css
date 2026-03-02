@@ -163,7 +163,7 @@ about .grid2{
   border-bottom: 1px solid var(--hair);
   background: none;
 }
-.tag{margin:0 0 10px; font-size:12px; letter-spacing:.08em; text-transform:uppercase; color: var(--muted)}
+.tag{margin:0 0 10px; font-size:12px; letter-spacing:.08em; text-transform:lowercase; color: var(--muted)}
 .work p{margin:0; font-size:14px; color: var(--muted)}
 .work p:last-child{color:var(--ink)}
 
