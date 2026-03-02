@@ -192,7 +192,7 @@ about .grid2{
 }
 
 .plus-list li::before{
-  content: "+";
+  content: "＋";   /* full-width plus */
   position: absolute;
   left: 0;
   color: var(--ink);
