@@ -217,11 +217,13 @@ h3{margin:0 0 8px; font-size:16px; letter-spacing:-.01em}
 }
 
 .plus-list li::before{
-  content: "＋";   /* full-width plus */
+  content: "＋";
   position: absolute;
   left: 0;
+  top: 0.35em;          /* vertically align it better */
+  font-size: 0.55em;    /* makes it ~half size */
   color: var(--ink);
-  font-weight: 250;
+  font-weight: 300;
 }
 
 .form label{display:grid; gap:6px; margin-bottom:12px}
