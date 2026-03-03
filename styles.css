@@ -172,26 +172,41 @@ h3{margin:0 0 8px; font-size:16px; letter-spacing:-.01em}
   gap: 32px;
 }
 .work{
-  max-width: 64ch;
-}
-
-.work:nth-child(even){
-  margin-left: 48px;
-}
-
-@media (max-width: 900px){
-  .work:nth-child(even){
-    margin-left: 0;
-  }
-}
-.work{
-  padding: 0 0 20px 0;
+  max-width: 62ch;
+  padding: 0 0 28px 0;   /* slightly more breathing room */
   border-bottom: 1px solid var(--hair);
   background: none;
 }
-/* subtle title offset */
-.work:nth-child(even) h3{
-  margin-left: 12px;
+
+/* vertical rhythm variance */
+.work:nth-child(3n+1){
+  margin-top: 8px;
+}
+
+.work:nth-child(3n+2){
+  margin-top: 26px;
+}
+
+.work:nth-child(3n){
+  margin-top: 14px;
+}
+/* sculptural title shifts */
+.work:nth-child(3) h3{
+  transform: translateX(-18px);
+}
+
+.work:nth-child(6) h3{
+  transform: translateX(-26px);
+}
+
+@media (max-width: 900px){
+  .work:nth-child(3) h3,
+  .work:nth-child(6) h3{
+    transform: none;
+  }
+}
+.work:nth-child(3n){
+  border-bottom: none;
 }
 .tag{
   margin: 10px 0 10px;
