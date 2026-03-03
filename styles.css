@@ -201,6 +201,12 @@ h3{margin:0 0 8px; font-size:16px; letter-spacing:-.01em}
   color: var(--muted);
   opacity: .75;
 }
+.work__idx{
+  font-size: 12px;
+  letter-spacing: .08em;
+  margin: 0 0 10px 0;
+  opacity: .55;
+}
 .work p{margin:0; font-size:14px; color: var(--muted)}
 .work p:last-child{color:var(--ink)}
 
