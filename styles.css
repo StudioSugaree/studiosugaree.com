@@ -11,7 +11,6 @@
   --rail: 120px;
   --gap: 28px;
   --measure: 66ch;
-
   --accent: #002fa7; /* yves klein blue */
 }
 *{box-sizing:border-box}
@@ -71,26 +70,96 @@ a:hover{opacity:.86}
 .nav a{text-decoration:none; font-size:14px; color: var(--muted)}
 .nav a:hover{color:var(--ink)}
 
-.hero{padding:88px 0 54px}
-.kicker{margin:0 0 16px; font-size:12px; letter-spacing:.16em; text-transform:uppercase; color: var(--accent);}
-.hero__title {
+.hero{
+  padding: 96px 0 64px;
+}
+
+.kicker{
+  margin: 0 0 16px;
+  font-size: 12px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  position: relative;
+  padding-left: 14px;
+}
+
+.kicker::before{
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: .55;
+}
+
+.hero__inner{
+  position: relative;
+}
+
+.hero__idx{
+  margin: 0 0 10px 0;
+  letter-spacing: .12em;
+  opacity: .55;
+}
+
+.hero__title{
+  margin: 0;
   font-size: clamp(2.8rem, 6vw, 4.8rem);
   font-weight: 500;
   line-height: 1.05;
   letter-spacing: -0.02em;
+  max-width: 22ch;
 }
+
 .hero__light{
   font-weight: 300;
+  opacity: .55;
 }
-.hero__sub {
+
+.hero__sub{
   font-size: 1.1rem;
   opacity: .75;
-  margin-top: 1.25rem;
+  margin: 18px 0 0;
+  max-width: 54ch;
 }
-.hero__meta{margin-top:26px; display:grid; gap:18px}
-.meta{margin:0; max-width: 84ch}
+
+.hero__meta{
+  margin-top: 28px;
+  display: grid;
+  gap: 14px;
+  max-width: 60ch;
+}
+
+.meta{
+  margin: 0;
+}
+
+/* CTA row */
 .hero__cta{
-  margin-left: 2rem;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  margin-left: 0; /* kill the old offset */
+}
+
+.hero__cta .link{
+  border-bottom-color: rgba(0,0,0,.28);
+}
+
+/* tiny asymmetry */
+.hero__sub,
+.hero__meta{
+  transform: translateX(10px);
+}
+
+@media (max-width: 900px){
+  .hero__sub,
+  .hero__meta{
+    transform: none;
+  }
+  .hero__title{
+    max-width: none;
+  }
 }
 .section {
   padding: 6rem 0;
