@@ -196,7 +196,7 @@ h3{margin:0 0 8px; font-size:16px; letter-spacing:-.01em}
 .tag{
   font-size: 11px;
   letter-spacing: .2em;
-  text-transform: uppercase;
+  text-transform: lowercase;
   opacity: .6;
 }
 .work p{margin:0; font-size:14px; color: var(--muted)}
