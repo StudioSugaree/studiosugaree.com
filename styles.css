@@ -167,14 +167,22 @@ h3{margin:0 0 8px; font-size:16px; letter-spacing:-.01em}
 .pdf a:hover{border-bottom-color: var(--ink)}
 
 .workgrid{
-  display:grid;
-  grid-template-columns: repeat(2, minmax(0,1fr));
-  column-gap: 48px;
-  row-gap: 34px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+.work{
+  max-width: 64ch;
+}
+
+.work:nth-child(even){
+  margin-left: 48px;
 }
 
 @media (max-width: 900px){
-  .workgrid{ grid-template-columns:1fr; }
+  .work:nth-child(even){
+    margin-left: 0;
+  }
 }
 .work{
   padding: 0 0 20px 0;
