@@ -12,7 +12,7 @@
   --gap: 28px;
   --measure: 66ch;
 
-  --accent: #0057ff; /* restrained electric blue */
+  --accent: #002fa7; /* yves klein blue */
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
