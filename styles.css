@@ -183,7 +183,12 @@ h3{margin:0 0 8px; font-size:16px; letter-spacing:-.01em}
 .work:nth-child(even) h3{
   margin-left: 12px;
 }
-.tag{margin:0 0 10px; font-size:12px; letter-spacing:.08em; text-transform:lowercase; color: var(--muted)}
+.tag{
+  font-size: 11px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  opacity: .6;
+}
 .work p{margin:0; font-size:14px; color: var(--muted)}
 .work p:last-child{color:var(--ink)}
 
@@ -191,16 +196,20 @@ h3{margin:0 0 8px; font-size:16px; letter-spacing:-.01em}
 
 /* foundational block (replaces pills + dashed box) */
 .aside__inner{
-  padding: 18px 0 0;
   border: none;
+  padding-left: 18px;
+  border-left: 1px solid var(--hair);
 }
 
 .foundational{
-  margin: 10px 0 0;
-  font-size: 12px;
-  line-height: 1.6;
+  margin: 16px 0 0;
+  font-size: 11px;
+  line-height: 1.5;
+  letter-spacing: .06em;
+  text-transform: lowercase;
   color: var(--muted);
-  max-width: 72ch;
+  opacity: .7;
+  max-width: 60ch;
 }
 
 /* “designed” stagger */
